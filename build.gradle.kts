@@ -38,7 +38,7 @@ tasks.withType<Test> {
 
 tasks.withType<JMHTask> {
     jvmArgs = listOf("-XX:+PreserveFramePointer", "-XX:+UnlockDiagnosticVMOptions", "-XX:+DebugNonSafepoints")
-    humanOutputFile = project.file("/human.txt")            // human-readable output file
-    resultsFile = project.file("benchmark.txt")             // results file
+    humanOutputFile = project.file("./human.txt")            // human-readable output file
+    resultsFile = project.file("./benchmark.txt")             // results file
     threads = Runtime.getRuntime().availableProcessors()
 }
