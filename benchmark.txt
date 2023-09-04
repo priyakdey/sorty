@@ -1,0 +1,458 @@
+> Configure project :
+Kotlin DSL property assignment is an incubating feature.
+
+> Task :jmhRunBytecodeGenerator
+Processing 1 classes from /Users/priydey/dev/github.com/priyakdey/sorty/build/classes/java/jmh with "reflection" generator
+Writing out Java source to /Users/priydey/dev/github.com/priyakdey/sorty/build/jmh-generated-sources and resources to /Users/priydey/dev/github.com/priyakdey/sorty/build/jmh-generated-resources
+Processing 5 classes from /Users/priydey/dev/github.com/priyakdey/sorty/build/classes/java/test with "reflection" generator
+Writing out Java source to /Users/priydey/dev/github.com/priyakdey/sorty/build/jmh-generated-sources and resources to /Users/priydey/dev/github.com/priyakdey/sorty/build/jmh-generated-resources
+
+> Task :jmh
+# JMH version: 1.36
+# VM version: JDK 21-ea, OpenJDK 64-Bit Server VM, 21-ea+32-2482
+# VM invoker: /Users/priydey/.sdkman/candidates/java/21.ea.32-open/bin/java
+# VM options: -XX:+PreserveFramePointer -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.priyakdey.sorty.SortingBenchmark.benchmarkBinarySearchInsertionSort
+
+# Run progress: 0.00% complete, ETA 00:41:40
+# Fork: 1 of 5
+# Warmup Iteration   1: 2892.804 us/op
+# Warmup Iteration   2: 2858.870 us/op
+# Warmup Iteration   3: 2844.208 us/op
+# Warmup Iteration   4: 2843.674 us/op
+# Warmup Iteration   5: 2846.157 us/op
+Iteration   1: 2843.176 us/op [51s]
+Iteration   2: 2841.139 us/op [1m 1s]
+Iteration   3: 2852.853 us/op [1m 11s]
+Iteration   4: 2840.660 us/op [1m 21s]
+Iteration   5: 2841.995 us/op [1m 31s]
+
+# Run progress: 4.00% complete, ETA 00:40:06
+# Fork: 2 of 5
+# Warmup Iteration   1: 2892.388 us/op
+# Warmup Iteration   2: 2857.919 us/op
+# Warmup Iteration   3: 2844.035 us/op
+# Warmup Iteration   4: 2838.263 us/op
+# Warmup Iteration   5: 2839.168 us/op
+Iteration   1: 2846.595 us/op [2m 31s]
+Iteration   2: 2840.468 us/op [2m 41s]
+Iteration   3: 2845.733 us/op [2m 51s]
+Iteration   4: 2843.155 us/op [3m 1s]
+Iteration   5: 2840.734 us/op [3m 11s]
+
+# Run progress: 8.00% complete, ETA 00:38:25
+# Fork: 3 of 5
+# Warmup Iteration   1: 2894.617 us/op
+# Warmup Iteration   2: 2858.774 us/op
+# Warmup Iteration   3: 2844.903 us/op
+# Warmup Iteration   4: 2841.737 us/op
+# Warmup Iteration   5: 2842.849 us/op
+Iteration   1: 2846.002 us/op [4m 11s]
+Iteration   2: 2838.482 us/op [4m 21s]
+Iteration   3: 2844.630 us/op [4m 31s]
+Iteration   4: 2838.690 us/op [4m 41s]
+Iteration   5: 2841.883 us/op [4m 51s]
+
+# Run progress: 12.00% complete, ETA 00:36:45
+# Fork: 4 of 5
+# Warmup Iteration   1: 2894.410 us/op
+# Warmup Iteration   2: 2858.204 us/op
+# Warmup Iteration   3: 2843.281 us/op
+# Warmup Iteration   4: 2839.398 us/op
+# Warmup Iteration   5: 2839.366 us/op
+Iteration   1: 2844.000 us/op [5m 51s]
+Iteration   2: 2839.098 us/op [6m 1s]
+Iteration   3: 2843.943 us/op [6m 11s]
+Iteration   4: 2838.237 us/op [6m 22s]
+Iteration   5: 2838.528 us/op [6m 32s]
+
+# Run progress: 16.00% complete, ETA 00:35:05
+# Fork: 5 of 5
+# Warmup Iteration   1: 2895.086 us/op
+# Warmup Iteration   2: 2857.251 us/op
+# Warmup Iteration   3: 2844.411 us/op
+# Warmup Iteration   4: 2840.592 us/op
+# Warmup Iteration   5: 2838.118 us/op
+Iteration   1: 2844.743 us/op [7m 32s]
+Iteration   2: 2842.683 us/op [7m 42s]
+Iteration   3: 2839.014 us/op [7m 52s]
+Iteration   4: 2845.162 us/op [8m 2s]
+Iteration   5: 2840.108 us/op [8m 12s]
+
+
+Result "com.priyakdey.sorty.SortingBenchmark.benchmarkBinarySearchInsertionSort":
+  2842.468 ±(99.9%) 2.539 us/op [Average]
+  (min, avg, max) = (2838.237, 2842.468, 2852.853), stdev = 3.390
+  CI (99.9%): [2839.929, 2845.008] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 21-ea, OpenJDK 64-Bit Server VM, 21-ea+32-2482
+# VM invoker: /Users/priydey/.sdkman/candidates/java/21.ea.32-open/bin/java
+# VM options: -XX:+PreserveFramePointer -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.priyakdey.sorty.SortingBenchmark.benchmarkBubbleSort
+
+# Run progress: 20.00% complete, ETA 00:33:24
+# Fork: 1 of 5
+# Warmup Iteration   1: 274313.852 us/op
+# Warmup Iteration   2: 272218.498 us/op
+# Warmup Iteration   3: 272357.776 us/op
+# Warmup Iteration   4: 273963.837 us/op
+# Warmup Iteration   5: 272906.977 us/op
+Iteration   1: 272585.847 us/op9m 12s]
+Iteration   2: 271642.770 us/op9m 23s]
+Iteration   3: 272445.750 us/op9m 33s]
+Iteration   4: 273733.080 us/op9m 43s]
+Iteration   5: 271869.132 us/op9m 53s]
+
+# Run progress: 24.00% complete, ETA 00:31:47
+# Fork: 2 of 5
+# Warmup Iteration   1: 273896.466 us/op
+# Warmup Iteration   2: 272794.103 us/op
+# Warmup Iteration   3: 272968.695 us/op
+# Warmup Iteration   4: 274342.972 us/op
+# Warmup Iteration   5: 273395.867 us/op
+Iteration   1: 272015.011 us/op10m 54s]
+Iteration   2: 272117.519 us/op11m 4s]
+Iteration   3: 283659.125 us/op11m 14s]
+Iteration   4: 274500.899 us/op11m 24s]
+Iteration   5: 272675.363 us/op11m 34s]
+
+# Run progress: 28.00% complete, ETA 00:30:10
+# Fork: 3 of 5
+# Warmup Iteration   1: 278335.903 us/op
+# Warmup Iteration   2: 273062.316 us/op
+# Warmup Iteration   3: 273136.001 us/op
+# Warmup Iteration   4: 273675.032 us/op
+# Warmup Iteration   5: 272350.806 us/op
+Iteration   1: 274709.880 us/op12m 35s]
+Iteration   2: 273268.586 us/op12m 45s]
+Iteration   3: 273910.640 us/op12m 55s]
+Iteration   4: 273920.265 us/op13m 5s]
+Iteration   5: 273121.835 us/op13m 16s]
+
+# Run progress: 32.00% complete, ETA 00:28:31
+# Fork: 4 of 5
+# Warmup Iteration   1: 264698.434 us/op
+# Warmup Iteration   2: 259252.532 us/op
+# Warmup Iteration   3: 259725.217 us/op
+# Warmup Iteration   4: 260694.209 us/op
+# Warmup Iteration   5: 258995.519 us/op
+Iteration   1: 260038.532 us/op14m 16s]
+Iteration   2: 260112.718 us/op14m 27s]
+Iteration   3: 259967.788 us/op14m 37s]
+Iteration   4: 260053.970 us/op14m 47s]
+Iteration   5: 259131.999 us/op14m 57s]
+
+# Run progress: 36.00% complete, ETA 00:26:51
+# Fork: 5 of 5
+# Warmup Iteration   1: 266349.179 us/op
+# Warmup Iteration   2: 261288.370 us/op
+# Warmup Iteration   3: 261790.639 us/op
+# Warmup Iteration   4: 262888.000 us/op
+# Warmup Iteration   5: 261573.614 us/op
+Iteration   1: 261368.683 us/op15m 58s]
+Iteration   2: 261964.469 us/op16m 9s]
+Iteration   3: 261120.923 us/op16m 19s]
+Iteration   4: 261422.785 us/op16m 29s]
+Iteration   5: 260469.386 us/op16m 39s]
+
+
+Result "com.priyakdey.sorty.SortingBenchmark.benchmarkBubbleSort":
+  268473.078 ±(99.9%) 5224.115 us/op [Average]
+  (min, avg, max) = (259131.999, 268473.078, 283659.125), stdev = 6974.044
+  CI (99.9%): [263248.963, 273697.193] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 21-ea, OpenJDK 64-Bit Server VM, 21-ea+32-2482
+# VM invoker: /Users/priydey/.sdkman/candidates/java/21.ea.32-open/bin/java
+# VM options: -XX:+PreserveFramePointer -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.priyakdey.sorty.SortingBenchmark.benchmarkClassicInsertionSort
+
+# Run progress: 40.00% complete, ETA 00:25:13
+# Fork: 1 of 5
+# Warmup Iteration   1: 51922.064 us/op
+# Warmup Iteration   2: 51477.585 us/op
+# Warmup Iteration   3: 51321.946 us/op
+# Warmup Iteration   4: 51470.652 us/op
+# Warmup Iteration   5: 51283.858 us/op
+Iteration   1: 51337.667 us/op[17m 40s]
+Iteration   2: 51329.829 us/op[17m 50s]
+Iteration   3: 51469.123 us/op[18m]
+Iteration   4: 51398.734 us/op[18m 10s]
+Iteration   5: 51500.595 us/op[18m 20s]
+
+# Run progress: 44.00% complete, ETA 00:23:31
+# Fork: 2 of 5
+# Warmup Iteration   1: 50501.564 us/op
+# Warmup Iteration   2: 50112.157 us/op
+# Warmup Iteration   3: 50006.325 us/op
+# Warmup Iteration   4: 50124.513 us/op
+# Warmup Iteration   5: 49991.287 us/op
+Iteration   1: 50051.824 us/op[19m 20s]
+Iteration   2: 50297.164 us/op[19m 30s]
+Iteration   3: 49942.326 us/op[19m 40s]
+Iteration   4: 50000.219 us/op[19m 50s]
+Iteration   5: 49980.756 us/op[20m]
+
+# Run progress: 48.00% complete, ETA 00:21:50
+# Fork: 3 of 5
+# Warmup Iteration   1: 50654.660 us/op
+# Warmup Iteration   2: 50177.446 us/op
+# Warmup Iteration   3: 49949.229 us/op
+# Warmup Iteration   4: 50072.400 us/op
+# Warmup Iteration   5: 50100.614 us/op
+Iteration   1: 50138.506 us/op[21m 1s]
+Iteration   2: 50046.003 us/op[21m 11s]
+Iteration   3: 50157.535 us/op[21m 21s]
+Iteration   4: 50099.760 us/op[21m 31s]
+Iteration   5: 50008.812 us/op[21m 41s]
+
+# Run progress: 52.00% complete, ETA 00:20:09
+# Fork: 4 of 5
+# Warmup Iteration   1: 51795.861 us/op
+# Warmup Iteration   2: 51708.092 us/op
+# Warmup Iteration   3: 51280.186 us/op
+# Warmup Iteration   4: 51505.293 us/op
+# Warmup Iteration   5: 51411.109 us/op
+Iteration   1: 51270.002 us/op[22m 41s]
+Iteration   2: 51527.251 us/op[22m 51s]
+Iteration   3: 51520.260 us/op[23m 1s]
+Iteration   4: 51395.545 us/op[23m 11s]
+Iteration   5: 51323.427 us/op[23m 21s]
+
+# Run progress: 56.00% complete, ETA 00:18:28
+# Fork: 5 of 5
+# Warmup Iteration   1: 50450.304 us/op
+# Warmup Iteration   2: 50208.067 us/op
+# Warmup Iteration   3: 49982.429 us/op
+# Warmup Iteration   4: 50083.070 us/op
+# Warmup Iteration   5: 50000.449 us/op
+Iteration   1: 49977.456 us/op[24m 21s]
+Iteration   2: 50047.868 us/op[24m 32s]
+Iteration   3: 50032.889 us/op[24m 42s]
+Iteration   4: 49986.628 us/op[24m 52s]
+Iteration   5: 49914.706 us/op[25m 2s]
+
+
+Result "com.priyakdey.sorty.SortingBenchmark.benchmarkClassicInsertionSort":
+  50590.195 ±(99.9%) 514.768 us/op [Average]
+  (min, avg, max) = (49914.706, 50590.195, 51527.251), stdev = 687.200
+  CI (99.9%): [50075.427, 51104.963] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 21-ea, OpenJDK 64-Bit Server VM, 21-ea+32-2482
+# VM invoker: /Users/priydey/.sdkman/candidates/java/21.ea.32-open/bin/java
+# VM options: -XX:+PreserveFramePointer -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.priyakdey.sorty.SortingBenchmark.benchmarkMergeSort
+
+# Run progress: 60.00% complete, ETA 00:16:47
+# Fork: 1 of 5
+# Warmup Iteration   1: 1137.075 us/op]
+# Warmup Iteration   2: 1135.536 us/op]
+# Warmup Iteration   3: 1133.379 us/op]
+# Warmup Iteration   4: 1135.621 us/op]
+# Warmup Iteration   5: 1184.855 us/op]
+Iteration   1: 1139.146 us/op [26m 2s]
+Iteration   2: 1139.552 us/op [26m 12s]
+Iteration   3: 1139.009 us/op [26m 22s]
+Iteration   4: 1138.095 us/op [26m 32s]
+Iteration   5: 1138.377 us/op [26m 42s]
+
+# Run progress: 64.00% complete, ETA 00:15:06
+# Fork: 2 of 5
+# Warmup Iteration   1: 1125.712 us/op]
+# Warmup Iteration   2: 1125.911 us/op
+# Warmup Iteration   3: 1122.846 us/op]
+# Warmup Iteration   4: 1124.693 us/op]
+# Warmup Iteration   5: 1123.100 us/op]
+Iteration   1: 1123.035 us/op [27m 42s]
+Iteration   2: 1125.204 us/op [27m 52s]
+Iteration   3: 1123.302 us/op [28m 2s]
+Iteration   4: 1122.412 us/op [28m 12s]
+Iteration   5: 1124.847 us/op [28m 22s]
+
+# Run progress: 68.00% complete, ETA 00:13:25
+# Fork: 3 of 5
+# Warmup Iteration   1: 1125.227 us/op]
+# Warmup Iteration   2: 1125.656 us/op]
+# Warmup Iteration   3: 1123.500 us/op]
+# Warmup Iteration   4: 1123.373 us/op
+# Warmup Iteration   5: 1125.668 us/op]
+Iteration   1: 1124.103 us/op [29m 22s]
+Iteration   2: 1125.422 us/op [29m 32s]
+Iteration   3: 1127.528 us/op [29m 42s]
+Iteration   4: 1125.033 us/op [29m 52s]
+Iteration   5: 1126.108 us/op [30m 2s]
+
+# Run progress: 72.00% complete, ETA 00:11:44
+# Fork: 4 of 5
+# Warmup Iteration   1: 1144.159 us/op]
+# Warmup Iteration   2: 1144.850 us/op]
+# Warmup Iteration   3: 1141.452 us/op]
+# Warmup Iteration   4: 1142.024 us/op]
+# Warmup Iteration   5: 1143.942 us/op]
+Iteration   1: 1142.155 us/op [31m 3s]
+Iteration   2: 1145.172 us/op [31m 13s]
+Iteration   3: 1142.588 us/op [31m 23s]
+Iteration   4: 1141.716 us/op [31m 33s]
+Iteration   5: 1143.218 us/op [31m 43s]
+
+# Run progress: 76.00% complete, ETA 00:10:03
+# Fork: 5 of 5
+# Warmup Iteration   1: 1125.085 us/op]
+# Warmup Iteration   2: 1125.255 us/op
+# Warmup Iteration   3: 1122.645 us/op]
+# Warmup Iteration   4: 1123.107 us/op]
+# Warmup Iteration   5: 1124.343 us/op]
+Iteration   1: 1124.708 us/op [32m 43s]
+Iteration   2: 1125.311 us/op [32m 53s]
+Iteration   3: 1125.292 us/op [33m 3s]
+Iteration   4: 1124.782 us/op [33m 13s]
+Iteration   5: 1125.626 us/op [33m 23s]
+
+
+Result "com.priyakdey.sorty.SortingBenchmark.benchmarkMergeSort":
+  1131.270 ±(99.9%) 6.155 us/op [Average]
+  (min, avg, max) = (1122.412, 1131.270, 1145.172), stdev = 8.217
+  CI (99.9%): [1125.114, 1137.425] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 21-ea, OpenJDK 64-Bit Server VM, 21-ea+32-2482
+# VM invoker: /Users/priydey/.sdkman/candidates/java/21.ea.32-open/bin/java
+# VM options: -XX:+PreserveFramePointer -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.priyakdey.sorty.SortingBenchmark.benchmarkSelectionSort
+
+# Run progress: 80.00% complete, ETA 00:08:23
+# Fork: 1 of 5
+# Warmup Iteration   1: 55242.362 us/op
+# Warmup Iteration   2: 54212.123 us/op
+# Warmup Iteration   3: 54153.594 us/op
+# Warmup Iteration   4: 54127.484 us/op
+# Warmup Iteration   5: 54264.275 us/op
+Iteration   1: 54404.998 us/op[34m 23s]
+Iteration   2: 54205.407 us/op[34m 33s]
+Iteration   3: 54485.621 us/op[34m 43s]
+Iteration   4: 54078.744 us/op[34m 54s]
+Iteration   5: 54178.084 us/op[35m 3s]
+
+# Run progress: 84.00% complete, ETA 00:06:42
+# Fork: 2 of 5
+# Warmup Iteration   1: 55399.613 us/op
+# Warmup Iteration   2: 54145.694 us/op
+# Warmup Iteration   3: 54195.311 us/op
+# Warmup Iteration   4: 54311.923 us/op
+# Warmup Iteration   5: 54318.636 us/op
+Iteration   1: 54191.980 us/op[36m 4s]
+Iteration   2: 54095.180 us/op[36m 14s]
+Iteration   3: 54290.834 us/op[36m 24s]
+Iteration   4: 54301.631 us/op[36m 34s]
+Iteration   5: 54223.151 us/op[36m 44s]
+
+# Run progress: 88.00% complete, ETA 00:05:01
+# Fork: 3 of 5
+# Warmup Iteration   1: 55459.530 us/op
+# Warmup Iteration   2: 54487.895 us/op
+# Warmup Iteration   3: 54563.504 us/op
+# Warmup Iteration   4: 54327.169 us/op
+# Warmup Iteration   5: 54217.183 us/op
+Iteration   1: 55276.709 us/op[37m 44s]
+Iteration   2: 54648.082 us/op[37m 54s]
+Iteration   3: 54287.098 us/op[38m 5s]
+Iteration   4: 54704.103 us/op[38m 14s]
+Iteration   5: 54254.278 us/op[38m 25s]
+
+# Run progress: 92.00% complete, ETA 00:03:21
+# Fork: 4 of 5
+# Warmup Iteration   1: 55622.235 us/op
+# Warmup Iteration   2: 54206.627 us/op
+# Warmup Iteration   3: 54479.170 us/op
+# Warmup Iteration   4: 54361.178 us/op
+# Warmup Iteration   5: 54177.049 us/op
+Iteration   1: 54660.599 us/op[39m 25s]
+Iteration   2: 54085.117 us/op[39m 35s]
+Iteration   3: 54894.207 us/op[39m 45s]
+Iteration   4: 54411.437 us/op[39m 55s]
+Iteration   5: 54475.039 us/op[40m 5s]
+
+# Run progress: 96.00% complete, ETA 00:01:40
+# Fork: 5 of 5
+# Warmup Iteration   1: 55850.912 us/op
+# Warmup Iteration   2: 54111.509 us/op
+# Warmup Iteration   3: 54413.317 us/op
+# Warmup Iteration   4: 54190.159 us/op
+# Warmup Iteration   5: 54946.545 us/op
+Iteration   1: 54532.164 us/op[41m 5s]
+Iteration   2: 54594.904 us/op[41m 16s]
+Iteration   3: 54449.190 us/op[41m 26s]
+Iteration   4: 54505.423 us/op[41m 36s]
+Iteration   5: 54284.490 us/op[41m 46s]
+
+
+Result "com.priyakdey.sorty.SortingBenchmark.benchmarkSelectionSort":
+  54420.739 ±(99.9%) 206.959 us/op [Average]
+  (min, avg, max) = (54078.744, 54420.739, 55276.709), stdev = 276.285
+  CI (99.9%): [54213.779, 54627.698] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:41:55
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                            Mode  Cnt       Score      Error  Units
+SortingBenchmark.benchmarkBinarySearchInsertionSort  avgt   25    2842.468 ±    2.539  us/op
+SortingBenchmark.benchmarkBubbleSort                 avgt   25  268473.078 ± 5224.115  us/op
+SortingBenchmark.benchmarkClassicInsertionSort       avgt   25   50590.195 ±  514.768  us/op
+SortingBenchmark.benchmarkMergeSort                  avgt   25    1131.270 ±    6.155  us/op
+SortingBenchmark.benchmarkSelectionSort              avgt   25   54420.739 ±  206.959  us/op
+
+Benchmark result is saved to /Users/priydey/dev/github.com/priyakdey/sorty/build/results/jmh/results.txt
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
