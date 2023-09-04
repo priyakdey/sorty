@@ -1,9 +1,10 @@
 package com.priyakdey.sorty.impl;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.priyakdey.sorty.Sort;
 import java.util.Arrays;
 import java.util.stream.Stream;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -35,6 +36,6 @@ class ClassicInsertionSortTest {
         sorter.sort(elements);
         final String errMsg = String.format("expected %s, but got %s", Arrays.toString(expected),
             Arrays.toString(elements));
-        Assertions.assertArrayEquals(expected, elements, errMsg);
+        assertArrayEquals(expected, elements, errMsg);
     }
 }
